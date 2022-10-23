@@ -1,7 +1,7 @@
 ﻿
 namespace alphashare
 {
-    partial class Form1
+    partial class Main
     {
         /// <summary>
         /// Required designer variable.
@@ -29,63 +29,308 @@ namespace alphashare
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
+            this.controlClose = new System.Windows.Forms.Button();
+            this.controlMaximize = new System.Windows.Forms.Button();
+            this.controlMinimize = new System.Windows.Forms.Button();
+            this.controlOptions = new System.Windows.Forms.Button();
+            this.MainStartFade = new System.Windows.Forms.Timer(this.components);
+            this.MainCloseFade = new System.Windows.Forms.Timer(this.components);
+            this.home_label1 = new System.Windows.Forms.Label();
+            this.controlOptions_Menu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.controlItem_GitRepo = new System.Windows.Forms.ToolStripMenuItem();
+            this.controlItem_About = new System.Windows.Forms.ToolStripMenuItem();
+            this.SidebarLayout = new System.Windows.Forms.FlowLayoutPanel();
+            this.SidebarInfobar = new System.Windows.Forms.Panel();
+            this.SidebarInfobarVersion = new System.Windows.Forms.Label();
+            this.AlphaLogo = new System.Windows.Forms.PictureBox();
+            this.sidebarSection_Home_Panel = new System.Windows.Forms.Panel();
+            this.sidebarSection_Home_Label = new System.Windows.Forms.Label();
+            this.sidebarSection_Home_Icon = new System.Windows.Forms.PictureBox();
+            this.sidebarSection_Extractor_Panel = new System.Windows.Forms.Panel();
+            this.sidebarSection_Extractor_Label = new System.Windows.Forms.Label();
+            this.sidebarSection_Extractor_Icon = new System.Windows.Forms.PictureBox();
+            this.sidebarSection_Torrent_Panel = new System.Windows.Forms.Panel();
+            this.sidebarSection_Torrent_Label = new System.Windows.Forms.Label();
+            this.sidebarSection_Torrent_Icon = new System.Windows.Forms.PictureBox();
+            this.sidebarSection_Creator_Panel = new System.Windows.Forms.Panel();
+            this.sidebarSection_Creator_Label = new System.Windows.Forms.Label();
+            this.sidebarSection_Creator_Icon = new System.Windows.Forms.PictureBox();
+            this.controlOptions_Menu.SuspendLayout();
+            this.SidebarLayout.SuspendLayout();
+            this.SidebarInfobar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AlphaLogo)).BeginInit();
+            this.sidebarSection_Home_Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sidebarSection_Home_Icon)).BeginInit();
+            this.sidebarSection_Extractor_Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sidebarSection_Extractor_Icon)).BeginInit();
+            this.sidebarSection_Torrent_Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sidebarSection_Torrent_Icon)).BeginInit();
+            this.sidebarSection_Creator_Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sidebarSection_Creator_Icon)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // controlClose
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Name = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            resources.ApplyResources(this.controlClose, "controlClose");
+            this.controlClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.controlClose.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.controlClose.ForeColor = System.Drawing.Color.Red;
+            this.controlClose.Name = "controlClose";
+            this.controlClose.UseVisualStyleBackColor = false;
+            this.controlClose.Click += new System.EventHandler(this.ControlCloseClick);
             // 
-            // button1
+            // controlMaximize
             // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.ForeColor = System.Drawing.Color.Lime;
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.controlMaximize, "controlMaximize");
+            this.controlMaximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(0)))));
+            this.controlMaximize.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.controlMaximize.ForeColor = System.Drawing.Color.Yellow;
+            this.controlMaximize.Name = "controlMaximize";
+            this.controlMaximize.UseVisualStyleBackColor = false;
+            this.controlMaximize.Click += new System.EventHandler(this.ControlMaximizeClick);
             // 
-            // button2
+            // controlMinimize
             // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.ForeColor = System.Drawing.Color.Red;
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.controlMinimize, "controlMinimize");
+            this.controlMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(20)))), ((int)(((byte)(0)))));
+            this.controlMinimize.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.controlMinimize.ForeColor = System.Drawing.Color.Lime;
+            this.controlMinimize.Name = "controlMinimize";
+            this.controlMinimize.UseVisualStyleBackColor = false;
+            this.controlMinimize.Click += new System.EventHandler(this.ControlMinimizeClick);
             // 
-            // button3
+            // controlOptions
             // 
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.ForeColor = System.Drawing.Color.Yellow;
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.controlOptions, "controlOptions");
+            this.controlOptions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(20)))));
+            this.controlOptions.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.controlOptions.ForeColor = System.Drawing.Color.Blue;
+            this.controlOptions.Name = "controlOptions";
+            this.controlOptions.UseVisualStyleBackColor = false;
+            this.controlOptions.Click += new System.EventHandler(this.ControlOptionsClick);
             // 
-            // Form1
+            // MainStartFade
+            // 
+            this.MainStartFade.Enabled = true;
+            this.MainStartFade.Interval = 5;
+            this.MainStartFade.Tick += new System.EventHandler(this.StartFade);
+            // 
+            // MainCloseFade
+            // 
+            this.MainCloseFade.Interval = 20;
+            this.MainCloseFade.Tick += new System.EventHandler(this.CloseFade);
+            // 
+            // home_label1
+            // 
+            resources.ApplyResources(this.home_label1, "home_label1");
+            this.home_label1.ForeColor = System.Drawing.Color.White;
+            this.home_label1.Name = "home_label1";
+            // 
+            // controlOptions_Menu
+            // 
+            this.controlOptions_Menu.ImageScalingSize = new System.Drawing.Size(18, 18);
+            this.controlOptions_Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.controlItem_GitRepo,
+            this.controlItem_About});
+            this.controlOptions_Menu.Name = "controlOptions_Menu";
+            this.controlOptions_Menu.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            resources.ApplyResources(this.controlOptions_Menu, "controlOptions_Menu");
+            // 
+            // controlItem_GitRepo
+            // 
+            resources.ApplyResources(this.controlItem_GitRepo, "controlItem_GitRepo");
+            this.controlItem_GitRepo.Name = "controlItem_GitRepo";
+            this.controlItem_GitRepo.Click += new System.EventHandler(this.controlItem_GitRepo_Click);
+            // 
+            // controlItem_About
+            // 
+            resources.ApplyResources(this.controlItem_About, "controlItem_About");
+            this.controlItem_About.Name = "controlItem_About";
+            this.controlItem_About.Click += new System.EventHandler(this.controlItem_About_Click);
+            // 
+            // SidebarLayout
+            // 
+            this.SidebarLayout.BackColor = System.Drawing.Color.Black;
+            this.SidebarLayout.BackgroundImage = global::alphashare.Properties.Resources.theme_bluewave;
+            this.SidebarLayout.Controls.Add(this.SidebarInfobar);
+            this.SidebarLayout.Controls.Add(this.sidebarSection_Home_Panel);
+            this.SidebarLayout.Controls.Add(this.sidebarSection_Extractor_Panel);
+            this.SidebarLayout.Controls.Add(this.sidebarSection_Torrent_Panel);
+            this.SidebarLayout.Controls.Add(this.sidebarSection_Creator_Panel);
+            resources.ApplyResources(this.SidebarLayout, "SidebarLayout");
+            this.SidebarLayout.Name = "SidebarLayout";
+            // 
+            // SidebarInfobar
+            // 
+            this.SidebarInfobar.BackColor = System.Drawing.Color.Transparent;
+            this.SidebarInfobar.Controls.Add(this.SidebarInfobarVersion);
+            this.SidebarInfobar.Controls.Add(this.AlphaLogo);
+            resources.ApplyResources(this.SidebarInfobar, "SidebarInfobar");
+            this.SidebarInfobar.Name = "SidebarInfobar";
+            // 
+            // SidebarInfobarVersion
+            // 
+            resources.ApplyResources(this.SidebarInfobarVersion, "SidebarInfobarVersion");
+            this.SidebarInfobarVersion.ForeColor = System.Drawing.Color.White;
+            this.SidebarInfobarVersion.Name = "SidebarInfobarVersion";
+            // 
+            // AlphaLogo
+            // 
+            resources.ApplyResources(this.AlphaLogo, "AlphaLogo");
+            this.AlphaLogo.Image = global::alphashare.Properties.Resources.alpha;
+            this.AlphaLogo.Name = "AlphaLogo";
+            this.AlphaLogo.TabStop = false;
+            // 
+            // sidebarSection_Home_Panel
+            // 
+            this.sidebarSection_Home_Panel.BackColor = System.Drawing.Color.Transparent;
+            this.sidebarSection_Home_Panel.Controls.Add(this.sidebarSection_Home_Label);
+            this.sidebarSection_Home_Panel.Controls.Add(this.sidebarSection_Home_Icon);
+            resources.ApplyResources(this.sidebarSection_Home_Panel, "sidebarSection_Home_Panel");
+            this.sidebarSection_Home_Panel.Name = "sidebarSection_Home_Panel";
+            // 
+            // sidebarSection_Home_Label
+            // 
+            resources.ApplyResources(this.sidebarSection_Home_Label, "sidebarSection_Home_Label");
+            this.sidebarSection_Home_Label.ForeColor = System.Drawing.Color.White;
+            this.sidebarSection_Home_Label.Name = "sidebarSection_Home_Label";
+            // 
+            // sidebarSection_Home_Icon
+            // 
+            resources.ApplyResources(this.sidebarSection_Home_Icon, "sidebarSection_Home_Icon");
+            this.sidebarSection_Home_Icon.Image = global::alphashare.Properties.Resources.icon_home;
+            this.sidebarSection_Home_Icon.Name = "sidebarSection_Home_Icon";
+            this.sidebarSection_Home_Icon.TabStop = false;
+            // 
+            // sidebarSection_Extractor_Panel
+            // 
+            this.sidebarSection_Extractor_Panel.BackColor = System.Drawing.Color.Transparent;
+            this.sidebarSection_Extractor_Panel.Controls.Add(this.sidebarSection_Extractor_Label);
+            this.sidebarSection_Extractor_Panel.Controls.Add(this.sidebarSection_Extractor_Icon);
+            resources.ApplyResources(this.sidebarSection_Extractor_Panel, "sidebarSection_Extractor_Panel");
+            this.sidebarSection_Extractor_Panel.Name = "sidebarSection_Extractor_Panel";
+            // 
+            // sidebarSection_Extractor_Label
+            // 
+            resources.ApplyResources(this.sidebarSection_Extractor_Label, "sidebarSection_Extractor_Label");
+            this.sidebarSection_Extractor_Label.ForeColor = System.Drawing.Color.White;
+            this.sidebarSection_Extractor_Label.Name = "sidebarSection_Extractor_Label";
+            // 
+            // sidebarSection_Extractor_Icon
+            // 
+            resources.ApplyResources(this.sidebarSection_Extractor_Icon, "sidebarSection_Extractor_Icon");
+            this.sidebarSection_Extractor_Icon.Image = global::alphashare.Properties.Resources.icon_extract;
+            this.sidebarSection_Extractor_Icon.Name = "sidebarSection_Extractor_Icon";
+            this.sidebarSection_Extractor_Icon.TabStop = false;
+            // 
+            // sidebarSection_Torrent_Panel
+            // 
+            this.sidebarSection_Torrent_Panel.BackColor = System.Drawing.Color.Transparent;
+            this.sidebarSection_Torrent_Panel.Controls.Add(this.sidebarSection_Torrent_Label);
+            this.sidebarSection_Torrent_Panel.Controls.Add(this.sidebarSection_Torrent_Icon);
+            resources.ApplyResources(this.sidebarSection_Torrent_Panel, "sidebarSection_Torrent_Panel");
+            this.sidebarSection_Torrent_Panel.Name = "sidebarSection_Torrent_Panel";
+            // 
+            // sidebarSection_Torrent_Label
+            // 
+            resources.ApplyResources(this.sidebarSection_Torrent_Label, "sidebarSection_Torrent_Label");
+            this.sidebarSection_Torrent_Label.ForeColor = System.Drawing.Color.White;
+            this.sidebarSection_Torrent_Label.Name = "sidebarSection_Torrent_Label";
+            // 
+            // sidebarSection_Torrent_Icon
+            // 
+            resources.ApplyResources(this.sidebarSection_Torrent_Icon, "sidebarSection_Torrent_Icon");
+            this.sidebarSection_Torrent_Icon.Image = global::alphashare.Properties.Resources.icon_torrent;
+            this.sidebarSection_Torrent_Icon.Name = "sidebarSection_Torrent_Icon";
+            this.sidebarSection_Torrent_Icon.TabStop = false;
+            // 
+            // sidebarSection_Creator_Panel
+            // 
+            this.sidebarSection_Creator_Panel.BackColor = System.Drawing.Color.Transparent;
+            this.sidebarSection_Creator_Panel.Controls.Add(this.sidebarSection_Creator_Label);
+            this.sidebarSection_Creator_Panel.Controls.Add(this.sidebarSection_Creator_Icon);
+            resources.ApplyResources(this.sidebarSection_Creator_Panel, "sidebarSection_Creator_Panel");
+            this.sidebarSection_Creator_Panel.Name = "sidebarSection_Creator_Panel";
+            // 
+            // sidebarSection_Creator_Label
+            // 
+            resources.ApplyResources(this.sidebarSection_Creator_Label, "sidebarSection_Creator_Label");
+            this.sidebarSection_Creator_Label.ForeColor = System.Drawing.Color.White;
+            this.sidebarSection_Creator_Label.Name = "sidebarSection_Creator_Label";
+            // 
+            // sidebarSection_Creator_Icon
+            // 
+            resources.ApplyResources(this.sidebarSection_Creator_Icon, "sidebarSection_Creator_Icon");
+            this.sidebarSection_Creator_Icon.Image = global::alphashare.Properties.Resources.icon_create;
+            this.sidebarSection_Creator_Icon.Name = "sidebarSection_Creator_Icon";
+            this.sidebarSection_Creator_Icon.TabStop = false;
+            // 
+            // Main
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(10)))));
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackColor = System.Drawing.Color.Black;
+            this.Controls.Add(this.home_label1);
+            this.Controls.Add(this.controlOptions);
+            this.Controls.Add(this.controlMinimize);
+            this.Controls.Add(this.controlMaximize);
+            this.Controls.Add(this.SidebarLayout);
+            this.Controls.Add(this.controlClose);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "Main";
+            this.Opacity = 0D;
+            this.Load += new System.EventHandler(this.Main_Load);
+            this.controlOptions_Menu.ResumeLayout(false);
+            this.SidebarLayout.ResumeLayout(false);
+            this.SidebarInfobar.ResumeLayout(false);
+            this.SidebarInfobar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AlphaLogo)).EndInit();
+            this.sidebarSection_Home_Panel.ResumeLayout(false);
+            this.sidebarSection_Home_Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sidebarSection_Home_Icon)).EndInit();
+            this.sidebarSection_Extractor_Panel.ResumeLayout(false);
+            this.sidebarSection_Extractor_Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sidebarSection_Extractor_Icon)).EndInit();
+            this.sidebarSection_Torrent_Panel.ResumeLayout(false);
+            this.sidebarSection_Torrent_Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sidebarSection_Torrent_Icon)).EndInit();
+            this.sidebarSection_Creator_Panel.ResumeLayout(false);
+            this.sidebarSection_Creator_Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sidebarSection_Creator_Icon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button controlClose;
+        private System.Windows.Forms.FlowLayoutPanel SidebarLayout;
+        private System.Windows.Forms.Button controlMaximize;
+        private System.Windows.Forms.Button controlMinimize;
+        private System.Windows.Forms.Button controlOptions;
+        private System.Windows.Forms.Panel SidebarInfobar;
+        private System.Windows.Forms.PictureBox AlphaLogo;
+        private System.Windows.Forms.Label SidebarInfobarVersion;
+        private System.Windows.Forms.Timer MainStartFade;
+        private System.Windows.Forms.Timer MainCloseFade;
+        private System.Windows.Forms.Label home_label1;
+        private System.Windows.Forms.ContextMenuStrip controlOptions_Menu;
+        private System.Windows.Forms.ToolStripMenuItem controlItem_GitRepo;
+        private System.Windows.Forms.ToolStripMenuItem controlItem_About;
+        private System.Windows.Forms.Panel sidebarSection_Home_Panel;
+        private System.Windows.Forms.PictureBox sidebarSection_Home_Icon;
+        private System.Windows.Forms.Label sidebarSection_Home_Label;
+        private System.Windows.Forms.Panel sidebarSection_Extractor_Panel;
+        private System.Windows.Forms.Label sidebarSection_Extractor_Label;
+        private System.Windows.Forms.PictureBox sidebarSection_Extractor_Icon;
+        private System.Windows.Forms.Panel sidebarSection_Torrent_Panel;
+        private System.Windows.Forms.Label sidebarSection_Torrent_Label;
+        private System.Windows.Forms.PictureBox sidebarSection_Torrent_Icon;
+        private System.Windows.Forms.Panel sidebarSection_Creator_Panel;
+        private System.Windows.Forms.Label sidebarSection_Creator_Label;
+        private System.Windows.Forms.PictureBox sidebarSection_Creator_Icon;
     }
 }
 
