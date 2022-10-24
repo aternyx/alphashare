@@ -118,12 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label2.Text" xml:space="preserve">
-    <value>version α0.01 graphic test
-© Codename SIgma. All Rights Reserved
-
-MIT License
-
-Copyright (c) 2022 mgX
+    <value>Version α0.2 "Presonus" preview
+Copyright © 2022 mgX
+⚠️This version does not have the ability of creating and extracting archives. Still in development.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

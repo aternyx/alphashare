@@ -37,7 +37,6 @@ namespace alphashare
             this.controlOptions = new System.Windows.Forms.Button();
             this.MainStartFade = new System.Windows.Forms.Timer(this.components);
             this.MainCloseFade = new System.Windows.Forms.Timer(this.components);
-            this.home_label1 = new System.Windows.Forms.Label();
             this.controlOptions_Menu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.controlItem_GitRepo = new System.Windows.Forms.ToolStripMenuItem();
             this.controlItem_About = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,6 +44,7 @@ namespace alphashare
             this.SidebarInfobar = new System.Windows.Forms.Panel();
             this.SidebarInfobarVersion = new System.Windows.Forms.Label();
             this.AlphaLogo = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.sidebarSection_Home_Panel = new System.Windows.Forms.Panel();
             this.sidebarSection_Home_Label = new System.Windows.Forms.Label();
             this.sidebarSection_Home_Icon = new System.Windows.Forms.PictureBox();
@@ -57,6 +57,14 @@ namespace alphashare
             this.sidebarSection_Creator_Panel = new System.Windows.Forms.Panel();
             this.sidebarSection_Creator_Label = new System.Windows.Forms.Label();
             this.sidebarSection_Creator_Icon = new System.Windows.Forms.PictureBox();
+            this.SidebarExpandTimer = new System.Windows.Forms.Timer(this.components);
+            this.Section_Home = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.toolbarTitle = new System.Windows.Forms.Label();
+            this.TitleSync = new System.Windows.Forms.Timer(this.components);
+            this.SidebarCollapseTimer = new System.Windows.Forms.Timer(this.components);
             this.controlOptions_Menu.SuspendLayout();
             this.SidebarLayout.SuspendLayout();
             this.SidebarInfobar.SuspendLayout();
@@ -69,6 +77,9 @@ namespace alphashare
             ((System.ComponentModel.ISupportInitialize)(this.sidebarSection_Torrent_Icon)).BeginInit();
             this.sidebarSection_Creator_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sidebarSection_Creator_Icon)).BeginInit();
+            this.Section_Home.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // controlClose
@@ -122,12 +133,6 @@ namespace alphashare
             this.MainCloseFade.Interval = 20;
             this.MainCloseFade.Tick += new System.EventHandler(this.CloseFade);
             // 
-            // home_label1
-            // 
-            resources.ApplyResources(this.home_label1, "home_label1");
-            this.home_label1.ForeColor = System.Drawing.Color.White;
-            this.home_label1.Name = "home_label1";
-            // 
             // controlOptions_Menu
             // 
             this.controlOptions_Menu.ImageScalingSize = new System.Drawing.Size(18, 18);
@@ -154,12 +159,13 @@ namespace alphashare
             // 
             this.SidebarLayout.BackColor = System.Drawing.Color.Black;
             this.SidebarLayout.BackgroundImage = global::alphashare.Properties.Resources.theme_bluewave;
+            resources.ApplyResources(this.SidebarLayout, "SidebarLayout");
             this.SidebarLayout.Controls.Add(this.SidebarInfobar);
+            this.SidebarLayout.Controls.Add(this.panel1);
             this.SidebarLayout.Controls.Add(this.sidebarSection_Home_Panel);
             this.SidebarLayout.Controls.Add(this.sidebarSection_Extractor_Panel);
             this.SidebarLayout.Controls.Add(this.sidebarSection_Torrent_Panel);
             this.SidebarLayout.Controls.Add(this.sidebarSection_Creator_Panel);
-            resources.ApplyResources(this.SidebarLayout, "SidebarLayout");
             this.SidebarLayout.Name = "SidebarLayout";
             // 
             // SidebarInfobar
@@ -179,9 +185,17 @@ namespace alphashare
             // AlphaLogo
             // 
             resources.ApplyResources(this.AlphaLogo, "AlphaLogo");
+            this.AlphaLogo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AlphaLogo.Image = global::alphashare.Properties.Resources.alpha;
             this.AlphaLogo.Name = "AlphaLogo";
             this.AlphaLogo.TabStop = false;
+            this.AlphaLogo.Click += new System.EventHandler(this.Sidebar01);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
             // 
             // sidebarSection_Home_Panel
             // 
@@ -267,17 +281,69 @@ namespace alphashare
             this.sidebarSection_Creator_Icon.Name = "sidebarSection_Creator_Icon";
             this.sidebarSection_Creator_Icon.TabStop = false;
             // 
+            // SidebarExpandTimer
+            // 
+            this.SidebarExpandTimer.Interval = 1;
+            this.SidebarExpandTimer.Tick += new System.EventHandler(this.SidebarExpandTimerTick);
+            // 
+            // Section_Home
+            // 
+            resources.ApplyResources(this.Section_Home, "Section_Home");
+            this.Section_Home.Controls.Add(this.pictureBox2);
+            this.Section_Home.Controls.Add(this.label1);
+            this.Section_Home.Controls.Add(this.pictureBox1);
+            this.Section_Home.Name = "Section_Home";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::alphashare.Properties.Resources.alpha;
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Name = "label1";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::alphashare.Properties.Resources.icon_setting1;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
+            // toolbarTitle
+            // 
+            resources.ApplyResources(this.toolbarTitle, "toolbarTitle");
+            this.toolbarTitle.ForeColor = System.Drawing.Color.White;
+            this.toolbarTitle.Name = "toolbarTitle";
+            // 
+            // TitleSync
+            // 
+            this.TitleSync.Enabled = true;
+            this.TitleSync.Interval = 121;
+            this.TitleSync.Tick += new System.EventHandler(this.TitleSync_Tick);
+            // 
+            // SidebarCollapseTimer
+            // 
+            this.SidebarCollapseTimer.Interval = 1;
+            this.SidebarCollapseTimer.Tick += new System.EventHandler(this.SidebarCollapseTimerTick);
+            // 
             // Main
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Black;
-            this.Controls.Add(this.home_label1);
-            this.Controls.Add(this.controlOptions);
-            this.Controls.Add(this.controlMinimize);
-            this.Controls.Add(this.controlMaximize);
-            this.Controls.Add(this.SidebarLayout);
             this.Controls.Add(this.controlClose);
+            this.Controls.Add(this.controlMaximize);
+            this.Controls.Add(this.controlMinimize);
+            this.Controls.Add(this.controlOptions);
+            this.Controls.Add(this.SidebarLayout);
+            this.Controls.Add(this.toolbarTitle);
+            this.Controls.Add(this.Section_Home);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Main";
             this.Opacity = 0D;
@@ -299,6 +365,10 @@ namespace alphashare
             this.sidebarSection_Creator_Panel.ResumeLayout(false);
             this.sidebarSection_Creator_Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sidebarSection_Creator_Icon)).EndInit();
+            this.Section_Home.ResumeLayout(false);
+            this.Section_Home.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -315,7 +385,6 @@ namespace alphashare
         private System.Windows.Forms.Label SidebarInfobarVersion;
         private System.Windows.Forms.Timer MainStartFade;
         private System.Windows.Forms.Timer MainCloseFade;
-        private System.Windows.Forms.Label home_label1;
         private System.Windows.Forms.ContextMenuStrip controlOptions_Menu;
         private System.Windows.Forms.ToolStripMenuItem controlItem_GitRepo;
         private System.Windows.Forms.ToolStripMenuItem controlItem_About;
@@ -331,6 +400,15 @@ namespace alphashare
         private System.Windows.Forms.Panel sidebarSection_Creator_Panel;
         private System.Windows.Forms.Label sidebarSection_Creator_Label;
         private System.Windows.Forms.PictureBox sidebarSection_Creator_Icon;
+        private System.Windows.Forms.Timer SidebarExpandTimer;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel Section_Home;
+        private System.Windows.Forms.Label toolbarTitle;
+        private System.Windows.Forms.Timer TitleSync;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Timer SidebarCollapseTimer;
     }
 }
 

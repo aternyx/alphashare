@@ -160,7 +160,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;controlClose.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>0</value>
   </data>
   <data name="controlMaximize.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -196,7 +196,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;controlMaximize.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>1</value>
   </data>
   <data name="controlMinimize.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -235,7 +235,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;controlMinimize.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="controlOptions.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -274,50 +274,26 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;controlOptions.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <metadata name="MainStartFade.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>55, 25</value>
+    <value>10, 4</value>
   </metadata>
   <metadata name="MainCloseFade.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>194, 25</value>
+    <value>10, 26</value>
   </metadata>
-  <data name="home_label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="home_label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Montserrat ExtraBold, 16.1121483pt, style=Bold</value>
-  </data>
-  <data name="home_label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="home_label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>254, 26</value>
-  </data>
-  <data name="home_label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 33</value>
-  </data>
-  <data name="home_label1.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="home_label1.Text" xml:space="preserve">
-    <value>Hello World!</value>
-  </data>
-  <data name="&gt;&gt;home_label1.Name" xml:space="preserve">
-    <value>home_label1</value>
-  </data>
-  <data name="&gt;&gt;home_label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;home_label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;home_label1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <metadata name="controlOptions_Menu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>338, 25</value>
+    <value>186, 21</value>
   </metadata>
+  <data name="controlOptions_Menu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>203, 48</value>
+  </data>
+  <data name="&gt;&gt;controlOptions_Menu.Name" xml:space="preserve">
+    <value>controlOptions_Menu</value>
+  </data>
+  <data name="&gt;&gt;controlOptions_Menu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="controlItem_GitRepo.Font" type="System.Drawing.Font, System.Drawing">
     <value>Montserrat SemiBold, 8.747663pt, style=Bold</value>
   </data>
@@ -336,14 +312,8 @@
   <data name="controlItem_About.Text" xml:space="preserve">
     <value>About...</value>
   </data>
-  <data name="controlOptions_Menu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 48</value>
-  </data>
-  <data name="&gt;&gt;controlOptions_Menu.Name" xml:space="preserve">
-    <value>controlOptions_Menu</value>
-  </data>
-  <data name="&gt;&gt;controlOptions_Menu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="SidebarLayout.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>None</value>
   </data>
   <data name="SidebarInfobarVersion.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -355,17 +325,17 @@
     <value>NoControl</value>
   </data>
   <data name="SidebarInfobarVersion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>58, 8</value>
+    <value>50, 8</value>
   </data>
   <data name="SidebarInfobarVersion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 28</value>
+    <value>68, 28</value>
   </data>
   <data name="SidebarInfobarVersion.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="SidebarInfobarVersion.Text" xml:space="preserve">
-    <value>AlphaShare Version α0.01
-Graphics Test</value>
+    <value>AlphaShare
+Version α0.2</value>
   </data>
   <data name="&gt;&gt;SidebarInfobarVersion.Name" xml:space="preserve">
     <value>SidebarInfobarVersion</value>
@@ -436,6 +406,249 @@ Graphics Test</value>
   <data name="&gt;&gt;SidebarInfobar.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 48</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 2</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>SidebarLayout</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Home_Label.Name" xml:space="preserve">
+    <value>sidebarSection_Home_Label</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Home_Label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Home_Label.Parent" xml:space="preserve">
+    <value>sidebarSection_Home_Panel</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Home_Label.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Home_Icon.Name" xml:space="preserve">
+    <value>sidebarSection_Home_Icon</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Home_Icon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Home_Icon.Parent" xml:space="preserve">
+    <value>sidebarSection_Home_Panel</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Home_Icon.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="sidebarSection_Home_Panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 53</value>
+  </data>
+  <data name="sidebarSection_Home_Panel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="sidebarSection_Home_Panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 48</value>
+  </data>
+  <data name="sidebarSection_Home_Panel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Home_Panel.Name" xml:space="preserve">
+    <value>sidebarSection_Home_Panel</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Home_Panel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Home_Panel.Parent" xml:space="preserve">
+    <value>SidebarLayout</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Home_Panel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Extractor_Label.Name" xml:space="preserve">
+    <value>sidebarSection_Extractor_Label</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Extractor_Label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Extractor_Label.Parent" xml:space="preserve">
+    <value>sidebarSection_Extractor_Panel</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Extractor_Label.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Extractor_Icon.Name" xml:space="preserve">
+    <value>sidebarSection_Extractor_Icon</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Extractor_Icon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Extractor_Icon.Parent" xml:space="preserve">
+    <value>sidebarSection_Extractor_Panel</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Extractor_Icon.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="sidebarSection_Extractor_Panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 101</value>
+  </data>
+  <data name="sidebarSection_Extractor_Panel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="sidebarSection_Extractor_Panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 48</value>
+  </data>
+  <data name="sidebarSection_Extractor_Panel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Extractor_Panel.Name" xml:space="preserve">
+    <value>sidebarSection_Extractor_Panel</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Extractor_Panel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Extractor_Panel.Parent" xml:space="preserve">
+    <value>SidebarLayout</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Extractor_Panel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Torrent_Label.Name" xml:space="preserve">
+    <value>sidebarSection_Torrent_Label</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Torrent_Label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Torrent_Label.Parent" xml:space="preserve">
+    <value>sidebarSection_Torrent_Panel</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Torrent_Label.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Torrent_Icon.Name" xml:space="preserve">
+    <value>sidebarSection_Torrent_Icon</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Torrent_Icon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Torrent_Icon.Parent" xml:space="preserve">
+    <value>sidebarSection_Torrent_Panel</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Torrent_Icon.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="sidebarSection_Torrent_Panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 149</value>
+  </data>
+  <data name="sidebarSection_Torrent_Panel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="sidebarSection_Torrent_Panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 48</value>
+  </data>
+  <data name="sidebarSection_Torrent_Panel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Torrent_Panel.Name" xml:space="preserve">
+    <value>sidebarSection_Torrent_Panel</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Torrent_Panel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Torrent_Panel.Parent" xml:space="preserve">
+    <value>SidebarLayout</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Torrent_Panel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Creator_Label.Name" xml:space="preserve">
+    <value>sidebarSection_Creator_Label</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Creator_Label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Creator_Label.Parent" xml:space="preserve">
+    <value>sidebarSection_Creator_Panel</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Creator_Label.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Creator_Icon.Name" xml:space="preserve">
+    <value>sidebarSection_Creator_Icon</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Creator_Icon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Creator_Icon.Parent" xml:space="preserve">
+    <value>sidebarSection_Creator_Panel</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Creator_Icon.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="sidebarSection_Creator_Panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 197</value>
+  </data>
+  <data name="sidebarSection_Creator_Panel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="sidebarSection_Creator_Panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 48</value>
+  </data>
+  <data name="sidebarSection_Creator_Panel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Creator_Panel.Name" xml:space="preserve">
+    <value>sidebarSection_Creator_Panel</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Creator_Panel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Creator_Panel.Parent" xml:space="preserve">
+    <value>SidebarLayout</value>
+  </data>
+  <data name="&gt;&gt;sidebarSection_Creator_Panel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="SidebarLayout.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="SidebarLayout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="SidebarLayout.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>205, 559</value>
+  </data>
+  <data name="SidebarLayout.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>52, 0</value>
+  </data>
+  <data name="SidebarLayout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 559</value>
+  </data>
+  <data name="SidebarLayout.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;SidebarLayout.Name" xml:space="preserve">
+    <value>SidebarLayout</value>
+  </data>
+  <data name="&gt;&gt;SidebarLayout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SidebarLayout.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SidebarLayout.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="sidebarSection_Home_Label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -500,30 +713,6 @@ Graphics Test</value>
     <value>sidebarSection_Home_Panel</value>
   </data>
   <data name="&gt;&gt;sidebarSection_Home_Icon.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="sidebarSection_Home_Panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 48</value>
-  </data>
-  <data name="sidebarSection_Home_Panel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 3, 0, 0</value>
-  </data>
-  <data name="sidebarSection_Home_Panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 48</value>
-  </data>
-  <data name="sidebarSection_Home_Panel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;sidebarSection_Home_Panel.Name" xml:space="preserve">
-    <value>sidebarSection_Home_Panel</value>
-  </data>
-  <data name="&gt;&gt;sidebarSection_Home_Panel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;sidebarSection_Home_Panel.Parent" xml:space="preserve">
-    <value>SidebarLayout</value>
-  </data>
-  <data name="&gt;&gt;sidebarSection_Home_Panel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="sidebarSection_Extractor_Label.AutoSize" type="System.Boolean, mscorlib">
@@ -592,30 +781,6 @@ Graphics Test</value>
   <data name="&gt;&gt;sidebarSection_Extractor_Icon.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="sidebarSection_Extractor_Panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 96</value>
-  </data>
-  <data name="sidebarSection_Extractor_Panel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="sidebarSection_Extractor_Panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 48</value>
-  </data>
-  <data name="sidebarSection_Extractor_Panel.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;sidebarSection_Extractor_Panel.Name" xml:space="preserve">
-    <value>sidebarSection_Extractor_Panel</value>
-  </data>
-  <data name="&gt;&gt;sidebarSection_Extractor_Panel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;sidebarSection_Extractor_Panel.Parent" xml:space="preserve">
-    <value>SidebarLayout</value>
-  </data>
-  <data name="&gt;&gt;sidebarSection_Extractor_Panel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="sidebarSection_Torrent_Label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -681,30 +846,6 @@ Graphics Test</value>
   </data>
   <data name="&gt;&gt;sidebarSection_Torrent_Icon.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="sidebarSection_Torrent_Panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 144</value>
-  </data>
-  <data name="sidebarSection_Torrent_Panel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="sidebarSection_Torrent_Panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 48</value>
-  </data>
-  <data name="sidebarSection_Torrent_Panel.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;sidebarSection_Torrent_Panel.Name" xml:space="preserve">
-    <value>sidebarSection_Torrent_Panel</value>
-  </data>
-  <data name="&gt;&gt;sidebarSection_Torrent_Panel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;sidebarSection_Torrent_Panel.Parent" xml:space="preserve">
-    <value>SidebarLayout</value>
-  </data>
-  <data name="&gt;&gt;sidebarSection_Torrent_Panel.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="sidebarSection_Creator_Label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -772,56 +913,190 @@ Graphics Test</value>
   <data name="&gt;&gt;sidebarSection_Creator_Icon.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="sidebarSection_Creator_Panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 192</value>
+  <metadata name="SidebarExpandTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>404, 14</value>
+  </metadata>
+  <data name="Section_Home.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="sidebarSection_Creator_Panel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
+  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
+    <value>pictureBox2</value>
   </data>
-  <data name="sidebarSection_Creator_Panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 48</value>
+  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="sidebarSection_Creator_Panel.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
+    <value>Section_Home</value>
   </data>
-  <data name="&gt;&gt;sidebarSection_Creator_Panel.Name" xml:space="preserve">
-    <value>sidebarSection_Creator_Panel</value>
+  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;sidebarSection_Creator_Panel.Type" xml:space="preserve">
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>Section_Home</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>Section_Home</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Section_Home.Location" type="System.Drawing.Point, System.Drawing">
+    <value>53, 30</value>
+  </data>
+  <data name="Section_Home.Size" type="System.Drawing.Size, System.Drawing">
+    <value>842, 529</value>
+  </data>
+  <data name="Section_Home.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;Section_Home.Name" xml:space="preserve">
+    <value>Section_Home</value>
+  </data>
+  <data name="&gt;&gt;Section_Home.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;sidebarSection_Creator_Panel.Parent" xml:space="preserve">
-    <value>SidebarLayout</value>
-  </data>
-  <data name="&gt;&gt;sidebarSection_Creator_Panel.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="SidebarLayout.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="SidebarLayout.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="SidebarLayout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 559</value>
-  </data>
-  <data name="SidebarLayout.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;SidebarLayout.Name" xml:space="preserve">
-    <value>SidebarLayout</value>
-  </data>
-  <data name="&gt;&gt;SidebarLayout.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SidebarLayout.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Section_Home.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;SidebarLayout.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;Section_Home.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
+  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>262, 102</value>
+  </data>
+  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 20</value>
+  </data>
+  <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
+    <value>pictureBox2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
+    <value>Section_Home</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Montserrat, 14.13084pt, style=Bold</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>159, 69</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>525, 87</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Welcome to AlphaShare. To get started,
+click the      logo on the sidebar and go to your
+desired section.</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>Section_Home</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 69</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 50</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>Section_Home</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="toolbarTitle.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="toolbarTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Montserrat Medium, 8.074766pt, style=Bold</value>
+  </data>
+  <data name="toolbarTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 7</value>
+  </data>
+  <data name="toolbarTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>650, 16</value>
+  </data>
+  <data name="toolbarTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="toolbarTitle.Text" xml:space="preserve">
+    <value>Title ============================================================================</value>
+  </data>
+  <data name="&gt;&gt;toolbarTitle.Name" xml:space="preserve">
+    <value>toolbarTitle</value>
+  </data>
+  <data name="&gt;&gt;toolbarTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolbarTitle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;toolbarTitle.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <metadata name="TitleSync.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>682, 15</value>
+  </metadata>
+  <metadata name="SidebarCollapseTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>412, 43</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>89</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>107, 107</value>
@@ -2607,6 +2882,24 @@ Graphics Test</value>
   </data>
   <data name="&gt;&gt;controlItem_About.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SidebarExpandTimer.Name" xml:space="preserve">
+    <value>SidebarExpandTimer</value>
+  </data>
+  <data name="&gt;&gt;SidebarExpandTimer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TitleSync.Name" xml:space="preserve">
+    <value>TitleSync</value>
+  </data>
+  <data name="&gt;&gt;TitleSync.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SidebarCollapseTimer.Name" xml:space="preserve">
+    <value>SidebarCollapseTimer</value>
+  </data>
+  <data name="&gt;&gt;SidebarCollapseTimer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Main</value>

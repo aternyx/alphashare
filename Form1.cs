@@ -119,7 +119,6 @@ namespace alphashare
 
         private void Main_Load(object sender, EventArgs e)
         {
-
         }
         // Start Controls
         /* Minimize */    private void ControlMinimizeClick(object sender, EventArgs e) { this.WindowState = FormWindowState.Minimized; }
@@ -150,12 +149,50 @@ namespace alphashare
         }
         // End Fade //
 
+        // Sidebar Animation & Sections
+        private void Sidebar01(object sender, EventArgs e)
+        {
+            this.AlphaLogo.UseWaitCursor = true;
+            if (SidebarLayout.Width == SidebarLayout.MinimumSize.Width) { SidebarExpandTimer.Start(); }
+            else if (SidebarLayout.Width == SidebarLayout.MaximumSize.Width) { SidebarCollapseTimer.Start(); }
+        } // Open & Close
+        private void SidebarExpandTimerTick(object sender, EventArgs e)
+        {
+            if (SidebarLayout.Width == SidebarLayout.MinimumSize.Width);
+            {
+                if (SidebarLayout.Width == SidebarLayout.MaximumSize.Width)
+                {
+                    this.AlphaLogo.UseWaitCursor = false;
+                    SidebarExpandTimer.Stop();
+                }
+                else if ((this.AlphaLogo.UseWaitCursor == true) && (SidebarCollapseTimer.Enabled == true)) { SidebarExpandTimer.Stop(); }
+                else {SidebarLayout.Width += 8;}
+            }
+        } // Expansion
+        private void SidebarCollapseTimerTick(object sender, EventArgs e)
+        {
+            if (SidebarLayout.Width == SidebarLayout.MaximumSize.Width) ;
+            {
+                if (SidebarLayout.Width == SidebarLayout.MinimumSize.Width)
+                {
+                    this.AlphaLogo.UseWaitCursor = false;
+                    SidebarCollapseTimer.Stop();
+                }
+                else if ((this.AlphaLogo.UseWaitCursor == true) && (SidebarExpandTimer.Enabled == true)) { SidebarCollapseTimer.Stop(); }
+                else { SidebarLayout.Width -= 3; }
+            }
+        } // Collapsion
+        // End Sidebar
 
         // Start controlOptions Context Menu
-        /*Open*/ private void ControlOptionsClick(object sender, EventArgs e) { controlOptions_Menu.Show( MousePosition.X, MousePosition.Y ) ;}
+        /*Open*/
+        private void ControlOptionsClick(object sender, EventArgs e) { controlOptions_Menu.Show( MousePosition.X, MousePosition.Y ) ;}
         /*AboutForm*/private void controlItem_About_Click(object sender, EventArgs e){AboutForm abf = new AboutForm();abf.Show();}
         /*GItRepo*/private void controlItem_GitRepo_Click(object sender, EventArgs e) {System.Diagnostics.Process.Start("https://github.com/mariangamingX/alphashare");}
 
-
+        private void TitleSync_Tick(object sender, EventArgs e)
+        {
+            toolbarTitle.Text = this.Text;
+        }
     }
 }
